@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Manager - Smart Farming for Kenya</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#" id="nav-home">
+                <i class="fas fa-seedling me-2"></i>Farm Manager
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-page="landing">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-page="dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-page="add-asset">Add Asset</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        
+        <section id="page-landing" class="spa-page active">
+            
+            <div class="hero-section bg-light">
+                <div class="container py-5 text-center text-md-start">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h1 class="display-4 fw-bold text-success">Empowering Kenyan Farmers.</h1>
+                            <p class="lead text-muted mt-3">
+                                Track your livestock, poultry, and crops in one unified platform. 
+                                Reduce waste, optimize productivity, and turn raw farm activity into profitable decisions.
+                            </p>
+                            <button class="btn btn-success btn-lg mt-4 px-4" id="btn-get-started">
+                                Get Started <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                        </div>
+                        <div class="col-lg-6 mt-4 mt-lg-0 text-center">
+                           
+                            <i class="fas fa-tractor display-1 text-success opacity-50"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container my-5">
+                <h2 class="text-center mb-5">Everything You Need to Manage Your Farm</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4">
+                            <i class="fas fa-cow fa-3x text-success mb-3"></i>
+                            <h5>Individual Livestock</h5>
+                            <p class="text-muted">Track tagged animals, health records, and vaccination cycles.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4">
+                            <i class="fas fa-egg fa-3x text-warning mb-3"></i>
+                            <h5>Batch Poultry</h5>
+                            <p class="text-muted">Manage flocks, feed consumption, and mortality rates effortlessly.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4">
+                            <i class="fas fa-wheat-awn fa-3x text-success mb-3"></i>
+                            <h5>Crop Plots</h5>
+                            <p class="text-muted">Monitor planting cycles, harvest yields, and input costs per plot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-dashboard" class="spa-page container my-5" style="display: none;">
+            <h2>Farm Dashboard</h2>
+            <p>Your analytics and asset overview will go here.</p>
+        </section>
+
+        <section id="page-add-asset" class="spa-page container my-5" style="display: none;">
+            <h2>Add New Asset</h2>
+            <p>Forms for adding livestock, batch, or plot will go here.</p>
+        </section>
+    </main>
+
+   
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2"><i class="fas fa-seedling me-2"></i>Farm Manager &copy; 2026. Built for Kenyan Agriculture.</p>
+            <p class="mb-0 small text-muted">A Moringa School Module 1 & 2 Independent Project.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
