@@ -31,13 +31,13 @@ By digitizing the complete asset lifecycle, the platform delivers real-time dash
 - **Mobile-First Responsive Design**: Built with Bootstrap 5 to ensure perfect usability on low-end smartphones commonly used in rural areas.
 - **Live API Integration**: Fetches real-time local weather data to provide actionable farming insights (e.g., "Good day for planting").
 - **Robust Error Handling**: User-friendly, dismissible alerts when API calls fail or form validation errors occur.
-- **Local Storage Persistence**: Saves added farm assets to the browser's `localStorage` so data persists across page refreshes.
+
 
 ---
 
 ## 🛠️ Technologies Used
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript (ES6+)
-- **Styling**: Bootstrap 5 (via CDN), Custom CSS (Flexbox, CSS Animations)
+- **Styling**: Bootstrap 5 (via CDN), Custom CSS (Flexbox)
 - **APIs**: 
   - `GET`: Open-Meteo API (No auth required) for live weather data.
   - `POST`: JSONPlaceholder (Mock API) to simulate saving new farm assets to a backend.
