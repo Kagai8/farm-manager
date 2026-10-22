@@ -5,7 +5,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-**ShambaSync** is a mobile-first Single Page Application (SPA) designed to digitize and simplify farm operations for Kenyan farmers. It replaces manual, fragmented record-keeping with a unified, intuitive platform to track individual livestock, batch poultry, and crop plots.
+**ShambaSync** is a mobile-first web application, a Single Page Application (SPA), designed to digitize and simplify farm operations for Kenyan farmers. It replaces manual, fragmented record-keeping with a unified, intuitive platform to track individual livestock, batch poultry, and crop plots.
 
 > *This is an Independent Project for Moringa School (Module 1 & 2).*
 
@@ -39,7 +39,7 @@ By digitizing the complete asset lifecycle, the platform delivers real-time dash
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript (ES6+)
 - **Styling**: Bootstrap 5 (via CDN), Custom CSS (Flexbox)
 - **APIs**: 
-  - `GET`: Open-Meteo API (No auth required) for live weather data.
+  - `GET`: Open-Meteo API  for live weather data.
   - `POST`: JSONPlaceholder (Mock API) to simulate saving new farm assets to a backend.
 - **Version Control**: Git & GitHub
 
