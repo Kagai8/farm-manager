@@ -5,7 +5,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-**ShambaSync** is a mobile-first Single Page Application (SPA) designed to digitize and simplify farm operations for Kenyan farmers. It replaces manual, fragmented record-keeping with a unified, intuitive platform to track individual livestock, batch poultry, and crop plots.
+**ShambaSync** is a mobile-first web application Single Page Application (SPA) designed to digitize and simplify farm operations for Kenyan farmers. It replaces manual, fragmented record-keeping with a unified, intuitive platform to track individual livestock, batch poultry, and crop plots.
 
 > *This is an Independent Project for Moringa School (Module 1 & 2).*
 

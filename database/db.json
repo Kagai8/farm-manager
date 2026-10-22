@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "type": "Livestock",
+    "name": "Dairy Cow #104",
+    "details": "Tag: KEN-2023-04 | Breed: Friesian"
+  },
+  {
+    "id": 2,
+    "type": "Poultry",
+    "name": "Broiler Batch A",
+    "details": "Size: 500 birds | Hatch Date: Oct 2026"
+  },
+  {
+    "id": 3,
+    "type": "Crop",
+    "name": "Maize Plot 1",
+    "details": "Size: 2.5 Acres | Planting Cycle: Long Rains"
+  },
+  {
+    "id": 4,
+    "type": "Livestock",
+    "name": "Goat Herd Alpha",
+    "details": "Count: 15 | Breed: Galla"
+  },
+  {
+    "id": 5,
+    "type": "Livestock",
+    "name": "Bull #002",
+    "details": "Tag: KEN-2022-88 | Breed: Boran"
+  },
+  {
+    "id": 6,
+    "type": "Poultry",
+    "name": "Layer Batch B",
+    "details": "Size: 300 birds | Hatch Date: Jan 2026"
+  },
+  {
+    "id": 7,
+    "type": "Poultry",
+    "name": "Kienyeji Flock",
+    "details": "Size: 150 birds | Free Range"
+  },
+  {
+    "id": 8,
+    "type": "Crop",
+    "name": "Tomato Plot 2",
+    "details": "Size: 1.0 Acre | Irrigation: Drip"
+  },
+  {
+    "id": 9,
+    "type": "Crop",
+    "name": "Coffee Nursery",
+    "details": "Size: 0.5 Acres | Variety: Ruiru 11"
+  },
+  {
+    "id": 10,
+    "type": "Crop",
+    "name": "Beans Plot 3",
+    "details": "Size: 1.5 Acres | Planting Cycle: Short Rains"
+  }
+]

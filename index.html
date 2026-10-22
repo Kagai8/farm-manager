@@ -3,36 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farm Manager - Smart Farming for Kenya</title>
-    
-    
+    <title>ShambaSync - Smart Farming for Kenya</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#" id="nav-home">
-                <i class="fas fa-seedling me-2"></i>Farm Manager
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-seedling me-2"></i>ShambaSync
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" data-page="landing">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-page="dashboard">Dashboard</a>
+                        <a class="nav-link" href="#how-it-works">How It Works</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-page="add-asset">Add Asset</a>
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-us">Contact Us</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button class="btn btn-light text-success fw-bold px-4" id="btn-login">
+                            <i class="fas fa-user me-2"></i>Login / Sign Up
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -40,80 +43,212 @@
     </nav>
 
     <main>
-        
-        <section id="page-landing" class="spa-page active">
-            
-            <div class="hero-section bg-light">
-                <div class="container py-5 text-center text-md-start">
+        <section id="home" class="spa-page active">
+            <div class="hero-section">
+                <div class="container py-5">
                     <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h1 class="display-4 fw-bold text-success">Empowering Kenyan Farmers.</h1>
-                            <p class="lead text-muted mt-3">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-4 fw-bold text-white mb-3">Empowering Kenyan Farmers.</h1>
+                            <p class="lead text-white-50 mb-4">
                                 Track your livestock, poultry, and crops in one unified platform. 
                                 Reduce waste, optimize productivity, and turn raw farm activity into profitable decisions.
                             </p>
-                            <button class="btn btn-success btn-lg mt-4 px-4" id="btn-get-started">
-                                Get Started <i class="fas fa-arrow-right ms-2"></i>
+                            <button class="btn btn-light btn-lg px-4 fw-bold text-success" onclick="document.getElementById('how-it-works').scrollIntoView({behavior: 'smooth'})">
+                                Learn More <i class="fas fa-arrow-down ms-2"></i>
                             </button>
                         </div>
                         <div class="col-lg-6 mt-4 mt-lg-0 text-center">
-                           
-                            <i class="fas fa-tractor display-1 text-success opacity-50"></i>
+                            <img src="assets/images/hero_image.avif" 
+                                 alt="Kenyan Farmer in Field" 
+                                 class="img-fluid rounded-4 shadow-lg hero-image">
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="container my-5">
-                <h2 class="text-center mb-5">Everything You Need to Manage Your Farm</h2>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm text-center p-4">
-                            <i class="fas fa-cow fa-3x text-success mb-3"></i>
-                            <h5>Individual Livestock</h5>
-                            <p class="text-muted">Track tagged animals, health records, and vaccination cycles.</p>
+            <section id="how-it-works" class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="text-center mb-5 fw-bold text-success">How ShambaSync Works</h2>
+                    <div class="row g-4">
+                        <div class="col-md-4 text-center">
+                            <div class="bg-white p-4 rounded-3 shadow-sm h-100">
+                                <i class="fas fa-mobile-alt fa-3x text-success mb-3"></i>
+                                <h5>1. Register Your Farm</h5>
+                                <p class="text-muted">Create your account and set up your farm profile in minutes.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="bg-white p-4 rounded-3 shadow-sm h-100">
+                                <i class="fas fa-plus-circle fa-3x text-success mb-3"></i>
+                                <h5>2. Add Your Assets</h5>
+                                <p class="text-muted">Log your livestock, poultry batches, or crop plots with a few taps.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="bg-white p-4 rounded-3 shadow-sm h-100">
+                                <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
+                                <h5>3. Track & Grow</h5>
+                                <p class="text-muted">View real-time dashboards, get weather alerts, and maximize profits.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm text-center p-4">
-                            <i class="fas fa-egg fa-3x text-warning mb-3"></i>
-                            <h5>Batch Poultry</h5>
-                            <p class="text-muted">Manage flocks, feed consumption, and mortality rates effortlessly.</p>
+                </div>
+            </section>
+            <section id="about-us" class="py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <img src="assets/images/farmer.jpeg"
+                                 alt="Team working" class="img-fluid rounded-4 shadow mb-4 mb-lg-0">
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bold text-success mb-3">About Us</h2>
+                            <p class="lead">We are a team of agri-tech enthusiasts dedicated to bridging the digital divide in Kenyan agriculture.</p>
+                            <p class="text-muted">ShambaSync was built from the ground up to understand the unique challenges of local farmers. We believe that accessible technology is the key to food security and economic empowerment in Africa.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm text-center p-4">
-                            <i class="fas fa-wheat-awn fa-3x text-success mb-3"></i>
-                            <h5>Crop Plots</h5>
-                            <p class="text-muted">Monitor planting cycles, harvest yields, and input costs per plot.</p>
+                </div>
+            </section>
+            <section id="contact-us" class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="text-center fw-bold text-success mb-5">Contact Us</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="card border-0 shadow-sm p-4">
+                                <form id="contact-form">
+                                    <div class="mb-3">
+                                        <label for="contact-name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="contact-name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="contact-email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="contact-email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="contact-message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="contact-message" rows="4" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-success w-100">Send Message</button>
+                                </form>
+                                <div id="contact-alert" class="alert mt-3 d-none" role="alert"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="page-login" class="spa-page" style="display: none;">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 col-md-8">
+                        <div class="card border-0 shadow-lg p-4">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-seedling fa-3x text-success mb-2"></i>
+                                <h3 class="fw-bold text-success">Welcome Back</h3>
+                                <p class="text-muted">Sign in to manage your farm</p>
+                            </div>
+                            
+                            <form id="login-form">
+                                <div class="mb-3">
+                                    <label for="login-email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control form-control-lg" id="login-email" placeholder="farmer@example.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="login-password" class="form-label">Password</label>
+                                    <input type="password" class="form-control form-control-lg" id="login-password" placeholder="••••••••" required>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-success btn-lg fw-bold">Log In</button>
+                                </div>
+                            </form>
+                            
+                            <div class="text-center mt-3">
+                                <small class="text-muted">Don't have an account? <a href="#" class="text-success fw-bold">Sign up here</a></small>
+                            </div>
+                            <div id="login-alert" class="alert mt-3 d-none" role="alert"></div>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <button class="btn btn-link text-muted" id="btn-back-home">
+                                <i class="fas fa-arrow-left me-1"></i> Back to Home
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <section id="page-dashboard" class="spa-page container my-5" style="display: none;">
-            <h2>Farm Dashboard</h2>
-            <p>Your analytics and asset overview will go here.</p>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold text-success">Farm Dashboard</h2>
+                <button class="btn btn-success mb-3" id="btn-go-to-add">+ Add New Asset</button>
+                <button class="btn btn-outline-danger btn-sm" id="btn-logout">Logout</button>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm p-4">
+                        <h5><i class="fas fa-cloud-sun text-warning me-2"></i>Local Weather (API GET)</h5>
+                        <p id="weather-data" class="text-muted">Loading weather data...</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm p-4">
+                        <h5><i class="fas fa-database text-success me-2"></i>Saved Assets</h5>
+                        <ul id="asset-list" class="list-group list-group-flush mt-3">
+                            <li class="list-group-item text-muted">No assets added yet.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="page-add-asset" class="spa-page container my-5" style="display: none;">
-            <h2>Add New Asset</h2>
-            <p>Forms for adding livestock, batch, or plot will go here.</p>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold text-success">Add New Asset</h2>
+                <button class="btn btn-outline-secondary btn-sm" id="btn-back-to-dashboard">Back to Dashboard</button>
+            </div>
+            <div class="card border-0 shadow-sm p-4 col-lg-8 mx-auto">
+                <form id="asset-form">
+                    <div class="mb-3">
+                        <label for="asset-type" class="form-label">Asset Type</label>
+                        <select class="form-select" id="asset-type" required>
+                            <option value="" selected disabled>Choose an asset type...</option>
+                            <option value="Livestock">Individual Livestock</option>
+                            <option value="Poultry">Batch Poultry</option>
+                            <option value="Crop">Crop Plot</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="asset-name" class="form-label">Name / Identifier</label>
+                        <input type="text" class="form-control" id="asset-name" placeholder="e.g., Dairy Cow #104" required>
+                    </div>
+                    <div id="livestock-fields" class="dynamic-fields mb-3" style="display: none;">
+                        <label for="livestock-tag" class="form-label">Ear Tag Number</label>
+                        <input type="text" class="form-control" id="livestock-tag" placeholder="e.g., KEN-2023-04">
+                    </div>
+
+                    <div id="poultry-fields" class="dynamic-fields mb-3" style="display: none;">
+                        <label for="poultry-size" class="form-label">Flock Size (Number of Birds)</label>
+                        <input type="number" class="form-control" id="poultry-size" placeholder="e.g., 500">
+                    </div>
+
+                    <div id="crop-fields" class="dynamic-fields mb-3" style="display: none;">
+                        <label for="crop-size" class="form-label">Plot Size (in Acres)</label>
+                        <input type="number" step="0.1" class="form-control" id="crop-size" placeholder="e.g., 2.5">
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100 fw-bold">Save Asset to Farm</button>
+                </form>
+                <div id="asset-alert" class="alert mt-3 d-none" role="alert"></div>
+            </div>
         </section>
     </main>
-
-   
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer class="bg-success text-white py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-2"><i class="fas fa-seedling me-2"></i>Farm Manager &copy; 2026. Built for Kenyan Agriculture.</p>
-            <p class="mb-0 small text-muted">A Moringa School Module 1 & 2 Independent Project.</p>
+            <p class="mb-2 fw-bold"><i class="fas fa-seedling me-2"></i>ShambaSync &copy; 2026</p>
+            <p class="mb-0 small text-white-50">Built for Kenyan Agriculture </p>
         </div>
     </footer>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="js/script.js"></script>
 </body>
 </html>

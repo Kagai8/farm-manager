@@ -1,27 +1,44 @@
+/* Enable smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
 }
 
-
+/* Hero Section with Image Background Overlay */
 .hero-section {
-    min-height: 80vh;
+    background: linear-gradient(rgba(25, 135, 84, 0.85), rgba(25, 135, 84, 0.7)), 
+                url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 85vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
+.hero-image {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
 
-.card {
+.hero-image:hover {
+    transform: scale(1.20);
+}
+
+/* Card Hover Effects */
+.card, .bg-white.p-4 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card:hover {
+.card:hover, .bg-white.p-4:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
 }
 
-
+/* SPA Page Transitions */
 .spa-page {
     animation: fadeIn 0.4s ease-in-out;
 }
