@@ -9,7 +9,7 @@
 
 > *This is an Independent Project for Moringa School (Module 1 & 2).*
 
-🔗 **[Live Demo Link]** *(Coming soon)*
+🔗 **[\[Live Demo Link\]](https://kagai8.github.io/farm-manager/)** *(It is here!!)*
 
 ---
 
